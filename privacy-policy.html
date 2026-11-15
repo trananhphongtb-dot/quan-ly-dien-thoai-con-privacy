@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách riêng tư — Quản lý điện thoại con</title>
+<style>
+body{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:760px;margin:0 auto;padding:24px 18px;line-height:1.65;color:#222}
+h1{font-size:24px}h2{font-size:18px;margin-top:28px}
+.muted{color:#666;font-size:14px}
+</style>
+</head>
+<body>
+<h1>Chính sách riêng tư — Quản lý điện thoại con</h1>
+<p class="muted">Cập nhật lần cuối: 16/11/2026 · Nhà phát triển: Tran Phong · Liên hệ: trananhphongtb@gmail.com</p>
+
+<h2>1. Ứng dụng này làm gì</h2>
+<p>Quản lý điện thoại con giúp bố mẹ đặt giờ dùng máy, theo dõi và khóa điện thoại của con. Một ứng dụng dùng cho cả hai máy: máy bố mẹ và máy con. Để hai máy nói chuyện với nhau, ứng dụng cần lưu một số dữ liệu trên máy chủ Firebase của Google, như mô tả dưới đây.</p>
+
+<h2>2. Dữ liệu được thu thập</h2>
+<p><strong>Tài khoản bố mẹ:</strong> địa chỉ email dùng để đăng nhập (Firebase Auth). Máy con đăng nhập ẩn danh, không cần email.</p>
+<p><strong>Dữ liệu từ máy con, chỉ để bố mẹ của chính máy đó xem:</strong> thống kê dùng máy (app nào đang mở, mỗi app dùng bao lâu, mở bao nhiêu lần, giờ mở máy đầu tiên và giờ đóng máy cuối cùng trong ngày), trạng thái khóa máy và lý do khóa, vị trí của máy con, các yêu cầu SOS và xin mở khóa / xin thêm giờ, tên máy con, mã ghép nối và mã định danh thông báo (FCM token).</p>
+<p>Ứng dụng <strong>không</strong> đọc nội dung tin nhắn, không đọc mật khẩu, không ghi âm, không chụp ảnh màn hình.</p>
+
+<h2>3. Dữ liệu được lưu ở đâu và chia sẻ với ai</h2>
+<p>Dữ liệu được lưu trên Firebase của Google (Firestore, khu vực asia-southeast1) và chỉ dùng để vận hành tính năng quản lý trong gia đình bạn: bố mẹ chỉ xem được dữ liệu của chính các con mình (luật truy cập Firestore chỉ cho chủ gia đình đọc/ghi dữ liệu của gia đình đó). Dữ liệu <strong>không được bán, không chia sẻ cho bên thứ ba</strong> ngoài các dịch vụ Firebase của Google để chạy ứng dụng. Ứng dụng không có quảng cáo và không dùng công cụ phân tích hành vi (Google Analytics đang tắt).</p>
+
+<h2>4. Quyền trên máy con</h2>
+<p>Trên máy con, ứng dụng xin các quyền sau và chỉ dùng đúng mục đích đã nêu: quyền truy cập (Accessibility) để hiện màn hình khóa và nhận biết app đang mở; quyền xem mức dùng app (Usage Access) để tính giờ dùng; quyền hiển thị trên app khác để hiện màn hình khóa; quyền vị trí để bố mẹ xem vị trí máy con; quyền thông báo để báo SOS và xin mở khóa; quyền gọi điện để con gọi cho bố mẹ khi máy bị khóa.</p>
+
+<h2>5. Trẻ em</h2>
+<p>Máy con thường là trẻ em (dưới 13 tuổi). Dữ liệu của trẻ chỉ được thu thập để phục vụ tính năng quản lý của chính bố mẹ trẻ, không dùng cho quảng cáo hay mục đích khác, và chỉ bố mẹ của trẻ mới xem được.</p>
+
+<h2>6. Xóa dữ liệu</h2>
+<p>Bố mẹ có thể yêu cầu xóa toàn bộ dữ liệu của gia đình mình bằng cách gửi email tới <strong>trananhphongtb@gmail.com</strong>; yêu cầu sẽ được xử lý trong vòng 30 ngày. Gỡ ứng dụng khỏi máy con sẽ dừng việc thu thập dữ liệu từ máy đó.</p>
+
+<h2>7. Thay đổi chính sách</h2>
+<p>Nếu chính sách này thay đổi, phiên bản mới sẽ được đăng tại trang này kèm ngày cập nhật.</p>
+
+<h2>8. Liên hệ</h2>
+<p>Mọi câu hỏi về chính sách riêng tư, xin gửi về: <strong>trananhphongtb@gmail.com</strong>.</p>
+
+<hr>
+<h1>Privacy Policy — Quản lý điện thoại con (Child Phone Manager)</h1>
+<p class="muted">Last updated: November 16, 2026 · Developer: Tran Phong · Contact: trananhphongtb@gmail.com</p>
+
+<h2>1. What this app does</h2>
+<p>Quản lý điện thoại con helps parents set screen-time limits, monitor and lock their child's phone. One app serves both devices: the parent's phone and the child's phone. To let the two phones talk to each other, the app stores some data on Google Firebase servers, as described below.</p>
+
+<h2>2. Data collected</h2>
+<p><strong>Parent account:</strong> the email address used to sign in (Firebase Auth). The child device signs in anonymously and needs no email.</p>
+<p><strong>Data from the child device, visible only to that child's own parent:</strong> usage statistics (which app is open, how long each app is used, how many times it is opened, first unlock and last lock times of the day), lock status and lock reason, the child device's location, SOS and unlock / extra-time requests, the child device name, pairing codes and the notification (FCM) token.</p>
+<p>The app does <strong>not</strong> read message content, passwords, audio recordings or screenshots.</p>
+
+<h2>3. Where data is stored and who it is shared with</h2>
+<p>Data is stored on Google Firebase (Firestore, asia-southeast1 region) and is used only to run the family management features: a parent can only see data of their own children (Firestore rules allow only the family owner to read/write that family's data). Data is <strong>not sold and not shared with third parties</strong> other than the Google Firebase services that run the app. The app has no ads and no behavioural analytics (Google Analytics is off).</p>
+
+<h2>4. Permissions on the child device</h2>
+<p>On the child device the app requests: Accessibility access (to show the lock screen and detect the foreground app); Usage Access (to measure screen time); Draw over other apps (to show the lock screen); Location (so the parent can see the child's device location); Notifications (for SOS and unlock requests); Phone (so the child can call the parent while locked). Each permission is used only for its stated purpose.</p>
+
+<h2>5. Children</h2>
+<p>The child device is usually used by a child (under 13). Children's data is collected only to provide parental-control features for their own parent, never for advertising or other purposes, and only that parent can view it.</p>
+
+<h2>6. Deleting data</h2>
+<p>A parent can request deletion of all their family's data by emailing <strong>trananhphongtb@gmail.com</strong>; requests are handled within 30 days. Uninstalling the app from the child device stops data collection from that device.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted on this page with its update date.</p>
+
+<h2>8. Contact</h2>
+<p>Questions about this privacy policy: <strong>trananhphongtb@gmail.com</strong>.</p>
+</body>
+</html>
